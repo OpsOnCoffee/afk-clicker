@@ -5,5 +5,6 @@ key=$2    # Key to send, 1 = left mouse, 2 = middle, 3 = right
           # and pass the key you want to (it can be a combination).
 
 win=$(xdotool search --onlyvisible -name $title | head -1)
-
+echo "test"
+echo "edit file"
 xdotool click --clearmodifiers --repeat 100000000000000000 --delay 1000 --window $win $key
